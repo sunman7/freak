@@ -33,7 +33,7 @@ const Nav = () => {
                     <Link to="/record">记账</Link>
                 </li>
                 <li>
-                    <Icon name="Stat"/>
+                    <Icon name="stat"/>
                     <Link to="/statistics">统计</Link>
                 </li>
             </ul>

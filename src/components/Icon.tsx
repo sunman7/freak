@@ -2,7 +2,7 @@ import React from "react";
 
 const importAll = (requireContext: __WebpackModuleApi.RequireContext) => requireContext.keys().forEach(requireContext);
 try {
-    importAll(require.context("icons", true, /\.svg$/));
+    importAll(require.context("../icons", true, /\.svg$/));
 } catch (error) {
     console.log(error);
 }
