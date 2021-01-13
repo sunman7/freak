@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import React from "react";
-require("../icons/record.svg");
-require("../icons/tag.svg");
-require("../icons/stat.svg");
+import Icon from "./Icon";
+
 
 const NavWrapper = styled.nav`
 line-height: 24px;
@@ -26,21 +25,15 @@ const Nav = () => {
         <NavWrapper>
             <ul>
                 <li>
-                    <svg className="icon">
-                        <use xlinkHref="#tag" />
-                    </svg>
+                    <Icon name="tag"/>
                     <Link to="/tags">标签页</Link>
                 </li>
                 <li>
-                    <svg className="icon">
-                        <use xlinkHref="#record" />
-                    </svg>
+                    <Icon name="record"/>
                     <Link to="/record">记账</Link>
                 </li>
                 <li>
-                    <svg className="icon">
-                        <use xlinkHref="#stat" />
-                    </svg>
+                    <Icon name="Stat"/>
                     <Link to="/statistics">统计</Link>
                 </li>
             </ul>
