@@ -6,20 +6,21 @@ import {
     Link,
     Redirect
 } from "react-router-dom";
-import Layout from "./components/Layout";
+import Record from "./views/Record";
+import Statistics from "./views/Statistics";
+import Tags from "./views/Tags";
+import NoMatch from "./views/NoMatch";
 
 
 function App() {
     return (
         <Router>
-
-
             <Switch>
                 <Route exact path="/tags">
                     <Tags/>
                 </Route>
                 <Route exact path="/record">
-                    <Records/>
+                    <Record/>
                 </Route>
                 <Route exact path="/statistics">
                     <Statistics/>
@@ -34,35 +35,5 @@ function App() {
     );
 }
 
-function Statistics() {
-    return (
-        <Layout>
-            <h2>统计</h2>
-        </Layout>
-    );
-}
-
-function Tags() {
-    return (
-        <Layout>
-            <h2>标签</h2>
-        </Layout>
-    );
-}
-
-function Records() {
-    return (
-        <Layout>
-            <h2>记录</h2>
-        </Layout>
-    );
-}
-
-function NoMatch() {
-    return (
-        <div>地址有误</div>
-    );
-
-}
 
 export default App;
