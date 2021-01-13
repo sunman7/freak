@@ -7,6 +7,7 @@ import Icon from "./Icon";
 const NavWrapper = styled.nav`
 line-height: 24px;
 box-shadow: 0 0 3px rgba(0,0,0,0.25);
+background: white;
 >ul{
   display: flex;
   >li{
@@ -15,6 +16,7 @@ box-shadow: 0 0 3px rgba(0,0,0,0.25);
       flex-direction: column;
      justify-content: center;
      align-items: center;
+     padding: 4px 0;
      &.selected{
         background: #000;
         .icon{
@@ -24,7 +26,6 @@ box-shadow: 0 0 3px rgba(0,0,0,0.25);
     }
      width:33.33%;
      text-align: center;
-     padding: 4px 0;
   }
 }
 `;
