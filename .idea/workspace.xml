@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Record.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Record.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/record/CategorySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/CategorySection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/record/NumberPadSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/NumberPadSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +51,7 @@
       <workItem from="1610515559926" duration="13000" />
       <workItem from="1610515739412" duration="1563000" />
       <workItem from="1610517329068" duration="14218000" />
-      <workItem from="1610589148151" duration="10759000" />
+      <workItem from="1610589148151" duration="12406000" />
     </task>
     <servers />
   </component>
@@ -90,21 +91,9 @@
       <screen x="0" y="0" width="1463" height="914" />
     </state>
     <state x="474" y="81" key="refactoring.ChangeSignatureDialog/0.0.1463.914@0.0.1463.914" timestamp="1610525427148" />
-    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1610601119185">
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1610613145855">
       <screen x="0" y="0" width="1463" height="914" />
     </state>
-    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1463.914@0.0.1463.914" timestamp="1610601119185" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/views/record/NumberPadSection.tsx</url>
-          <line>2</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1463.914@0.0.1463.914" timestamp="1610613145855" />
   </component>
 </project>
