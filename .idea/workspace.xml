@@ -4,10 +4,8 @@
     <list default="true" id="2a9c0810-af79-4299-8ef3-2fee267d579b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Record.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Record.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/record/NotesSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/NoteSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/record/CategorySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/CategorySection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +50,7 @@
       <workItem from="1610515559926" duration="13000" />
       <workItem from="1610515739412" duration="1563000" />
       <workItem from="1610517329068" duration="14218000" />
-      <workItem from="1610589148151" duration="8582000" />
+      <workItem from="1610589148151" duration="10759000" />
     </task>
     <servers />
   </component>
@@ -100,12 +98,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/views/record/CategorySection.tsx</url>
-          <line>2</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/views/record/NumberPadSection.tsx</url>
           <line>2</line>

@@ -15,14 +15,10 @@ const MyLayout = styled(Layout)`
 function Record() {
     return (
         <MyLayout>
-            <CategorySection>
-                <ul>
-                    <li className="selected">支出</li>
-                    <li>收入</li>
-                </ul>
-            </CategorySection>
+            <CategorySection/>
+
             <TagSection/>
-            <NoteSection />
+            <NoteSection/>
 
             <NumberPadSection>
                 <div className="output">100</div>
