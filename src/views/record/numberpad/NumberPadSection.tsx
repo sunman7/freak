@@ -1,21 +1,34 @@
-import styled from "styled-components";
-import React, {useState} from "react";
+import React from "react";
+import {NumberPadCSS} from "./NumberPadCSS";
 
-const NumberPadSection: React.FC = () => {
-    const [output, _setOutput] = useState("0");
+type Props = {
+    value: number,
+    onChange: (value: number) => void,
+    onOk?: () => void;
+}
+const NumberPadSection: React.FC<Props> = (props) => {
+    const output = props.value.toString();
     const setOutput = (output: string) => {
-        // 最多16位
+        let value;
+        // 限制最多16位
         if (output.length >= 16) {
-            output = output.slice(0, 16);
+            value = parseFloat(output.slice(0, 16));
         } else if (output.length === 0) {
-            output = "0";
+            value = 0;
+        } else {
+            value = parseFloat(output);
         }
-        _setOutput(output);
-
+        props.onChange(value);
     };
     const clickNumber = (e: React.MouseEvent) => {
         const val = (e.target as HTMLButtonElement).textContent;
         if (val === null) {
+            return;
+        }
+        if (val === "ok") {
+            if (props.onOk) {
+                props.onOk();
+            }
             return;
         }
         switch (val) {
@@ -79,56 +92,5 @@ const NumberPadSection: React.FC = () => {
     );
 };
 
-const NumberPadCSS = styled.section`
-  
-  > .output{
-    background: #F7FBFC;
-    font-size: 36px;
-    line-height: 72px;
-    text-align: right;
-    padding: 0 16px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,.12);
-  }
-  > .pad{
-    
-    >button{
-   
-      
-      float: left;
-      width: 25%;
-      height: 64px;
-      border: none;
-      &.ok{
-          float: right;
-          height: 128px;
-      }
-      &.zero{
-        width: 50%;
-      }
-      &:first-child{
-          background: #f2f2f2;
-      }
-      &:nth-child(2),&:nth-child(5){
-        background: #e0e0e0;
-      }
-      &:nth-child(3),&:nth-child(6),&:nth-child(9){
-          background: #d3d3d3;
-      }
-       &:nth-child(4),&:nth-child(7),&:nth-child(10){
-          background: #c1c1c1;
-      }
-      &:nth-child(8),&:nth-child(11),&:nth-child(13){
-      background: #bbbbbb;
-      
-      }
-      &:nth-child(12){
-        background: #9a9a9a;
-      }
-      &:nth-child(14){
-      background: #a9a9a9;
-      }
-    } 
-  }
-`;
 
 export default NumberPadSection;

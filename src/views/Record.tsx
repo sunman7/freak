@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
-import {TagSection} from "./record/TagSection";
-import {NoteSection} from "./record/NoteSection";
-import {CategorySection} from "./record/CategorySection";
-import NumberPadSection from "./record/NumberPadSection";
+import {TagSection} from "./record/tag/TagSection";
+import {NoteSection} from "./record/note/NoteSection";
+import {CategorySection} from "./record/category/CategorySection";
+import NumberPadSection from "./record/numberpad/NumberPadSection";
 
 
 const MyLayout = styled(Layout)`
@@ -13,14 +13,25 @@ const MyLayout = styled(Layout)`
 `;
 
 function Record() {
+    const [selected, setSelected] = useState({
+        tags: [] as string[],
+        note: "",
+        category: "-" as ("-" | "+"),
+        amount: 0
+    });
     return (
         <MyLayout>
-            <CategorySection/>
-
-            <TagSection/>
-            <NoteSection/>
-
-            <NumberPadSection />
+            <CategorySection value={selected.category}
+                             onChange={(category) => setSelected({...selected, category: category})}/>
+            <TagSection
+                value={selected.tags}
+                onChange={(tags) => setSelected({...selected, tags: tags})}/>
+            <NoteSection value={selected.note} onChange={(note) => {
+                setSelected({...selected, note: note});
+            }}/>
+            <NumberPadSection value={selected.amount}
+                              onChange={(amount) => setSelected({...selected, amount: amount})} onOk={() => {
+            }}/>
 
 
         </MyLayout>
