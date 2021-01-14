@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import React from "react";
 import styled from "styled-components";
-import {TagsSection} from "./record/TagsSection";
+import {TagSection} from "./record/TagSection";
 import {NotesSection} from "./record/NotesSection";
 import {CategorySection} from "./record/CategorySection";
 import NumberPadSection from "./record/NumberPadSection";
@@ -14,27 +14,20 @@ const MyLayout=styled(Layout)`
 function Record() {
     return (
         <MyLayout>
-            <TagsSection>
-                <ol>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ol>
-                <button>新增标签</button>
-            </TagsSection>
-            <NotesSection>
-                <label>
-                    <span>备注</span>
-                    <input type="text" placeholder="在此添加备注"/>
-                </label>
-            </NotesSection>
             <CategorySection>
                 <ul>
                     <li className="selected">支出</li>
                     <li>收入</li>
                 </ul>
             </CategorySection>
+            <TagSection>
+            </TagSection>
+            <NotesSection>
+                <label>
+                    <span>备注</span>
+                    <input type="text" placeholder="在此添加备注"/>
+                </label>
+            </NotesSection>
             <NumberPadSection>
                 <div className="output">100</div>
                 <div className="pad claerfix">

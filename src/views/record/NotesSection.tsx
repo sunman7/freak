@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const NotesSection = styled.section`
-    background: white;
+    background: #d6e6f2;
     padding: 10px 16px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.12);
     
     >label{
       display: flex;
@@ -17,6 +18,7 @@ const NotesSection = styled.section`
         height: 72px;
         border: none;
         background: none;
+        
        }
     }
 
