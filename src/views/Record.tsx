@@ -2,14 +2,15 @@ import Layout from "../components/Layout";
 import React from "react";
 import styled from "styled-components";
 import {TagSection} from "./record/TagSection";
-import {NotesSection} from "./record/NotesSection";
+import {NoteSection} from "./record/NoteSection";
 import {CategorySection} from "./record/CategorySection";
 import NumberPadSection from "./record/NumberPadSection";
 
-const MyLayout=styled(Layout)`
+
+const MyLayout = styled(Layout)`
   display: flex;
   flex-direction: column;
-`
+`;
 
 function Record() {
     return (
@@ -20,14 +21,9 @@ function Record() {
                     <li>收入</li>
                 </ul>
             </CategorySection>
-            <TagSection>
-            </TagSection>
-            <NotesSection>
-                <label>
-                    <span>备注</span>
-                    <input type="text" placeholder="在此添加备注"/>
-                </label>
-            </NotesSection>
+            <TagSection/>
+            <NoteSection />
+
             <NumberPadSection>
                 <div className="output">100</div>
                 <div className="pad claerfix">
