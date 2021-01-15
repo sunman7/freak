@@ -3,36 +3,36 @@ import {TagCSS} from "./TagCSS";
 import {useTags} from "../../../useTags";
 
 type Props = {
-    value: string[],
-    onChange: (selected: string[]) => void;
+    value: number[],
+    onChange: (selected: number[]) => void;
 }
 const TagSection: React.FC<Props> = (props) => {
-    const selectedTags = props.value;
+    const selectedTagId = props.value;
     const {tags, setTags} = useTags();
     const addTag = () => {
         const tagName = window.prompt("标签名称为");
         if (tagName !== null) {
-            setTags([...tags, tagName]);
+            setTags([...tags, {id: Math.random(), name: tagName}]);
         }
 
     };
-    const toggleTag = (tag: string) => {
-        const index = selectedTags.indexOf(tag);
+    const toggleTag = (tagId: number) => {
+        const index = selectedTagId.indexOf(tagId);
         if (index >= 0) {
             //取消选中
             //剔除掉被选中的tag
-            props.onChange(selectedTags.filter(t => t !== tag));
+            props.onChange(selectedTagId.filter(t => t !== tagId));
         } else {
             //选中
-            props.onChange([...selectedTags, tag]);
+            props.onChange([...selectedTagId, tagId]);
         }
     };
     return (
         <TagCSS>
             <ol>
                 {tags.map(tag =>
-                    <li key={tag} onClick={() => toggleTag(tag)}
-                        className={selectedTags.indexOf(tag) >= 0 ? "selected" : ""}>{tag}</li>)}
+                    <li key={tag.id} onClick={() => toggleTag(tag.id)}
+                        className={selectedTagId.indexOf(tag.id) >= 0 ? "selected" : ""}>{tag.name}</li>)}
             </ol>
             <button onClick={addTag}>新增标签</button>
         </TagCSS>);

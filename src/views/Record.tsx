@@ -1,4 +1,3 @@
-import Layout from "../components/Layout";
 import React, {useState} from "react";
 import styled from "styled-components";
 import {TagSection} from "./record/tag/TagSection";
@@ -17,7 +16,7 @@ const MyLayout = styled.div`
 
 function Record() {
     const [selected, setSelected] = useState({
-        tags: [] as string[],
+        tagId: [] as number[],
         note: "",
         category: "-" as ("-" | "+"),
         amount: 0
@@ -33,8 +32,8 @@ function Record() {
             <CategorySection value={selected.category}
                              onChange={(category) => selectedChanged({category})}/>
             <TagSection
-                value={selected.tags}
-                onChange={(tags) => selectedChanged({tags})}/>
+                value={selected.tagId}
+                onChange={(tagId) => selectedChanged({tagId})}/>
             <NoteSection value={selected.note} onChange={(note) => {
                 selectedChanged({note});
             }}
