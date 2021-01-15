@@ -19,21 +19,26 @@ function Record() {
         category: "-" as ("-" | "+"),
         amount: 0
     });
+    const selectedChanged = (obj: Partial<typeof selected>) => {
+        setSelected({
+            ...selected,
+            ...obj
+        });
+    };
     return (
         <MyLayout>
             <CategorySection value={selected.category}
-                             onChange={(category) => setSelected({...selected, category: category})}/>
+                             onChange={(category) => selectedChanged({category})}/>
             <TagSection
                 value={selected.tags}
-                onChange={(tags) => setSelected({...selected, tags: tags})}/>
+                onChange={(tags) => selectedChanged({tags})}/>
             <NoteSection value={selected.note} onChange={(note) => {
-                setSelected({...selected, note: note});
-            }}/>
+                selectedChanged({note});
+            }}
+            />
             <NumberPadSection value={selected.amount}
-                              onChange={(amount) => setSelected({...selected, amount: amount})} onOk={() => {
+                              onChange={(amount) => selectedChanged({amount})} onOk={() => {
             }}/>
-
-
         </MyLayout>
     );
 }

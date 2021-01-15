@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9c0810-af79-4299-8ef3-2fee267d579b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/record/category/CategoryCSS.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/record/note/NoteCSS.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/record/numberpad/NumberPadCSS.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/record/tag/TagCSS.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Record.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Record.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/record/CategorySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/category/CategorySection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/record/NoteSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/note/NoteSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/record/NumberPadSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/numberpad/NumberPadSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/record/TagSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/tag/TagSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/record/category/CategoryCSS.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/category/CategoryCSS.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/record/note/NoteSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/note/NoteSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,8 @@
       <workItem from="1610515559926" duration="13000" />
       <workItem from="1610515739412" duration="1563000" />
       <workItem from="1610517329068" duration="14218000" />
-      <workItem from="1610589148151" duration="15969000" />
+      <workItem from="1610589148151" duration="17545000" />
+      <workItem from="1610679985365" duration="1251000" />
     </task>
     <servers />
   </component>
@@ -105,9 +100,9 @@
       <screen x="0" y="0" width="1463" height="914" />
     </state>
     <state x="474" y="81" key="refactoring.ChangeSignatureDialog/0.0.1463.914@0.0.1463.914" timestamp="1610525427148" />
-    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1610619090567">
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1610680567015">
       <screen x="0" y="0" width="1463" height="914" />
     </state>
-    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1463.914@0.0.1463.914" timestamp="1610619090567" />
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1463.914@0.0.1463.914" timestamp="1610680567015" />
   </component>
 </project>
