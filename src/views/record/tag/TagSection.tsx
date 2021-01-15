@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import {TagCSS} from "./TagCSS";
+import {useTags} from "../../../useTags";
 
 type Props = {
     value: string[],
@@ -7,7 +8,7 @@ type Props = {
 }
 const TagSection: React.FC<Props> = (props) => {
     const selectedTags = props.value;
-    const [tags, setTags] = useState<string[]>(["1", "2"]);
+    const {tags, setTags} = useTags();
     const addTag = () => {
         const tagName = window.prompt("标签名称为");
         if (tagName !== null) {

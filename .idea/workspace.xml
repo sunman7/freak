@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a9c0810-af79-4299-8ef3-2fee267d579b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/useTags.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/right.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Tags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/record/tag/TagSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/record/tag/TagSection.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +30,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/vue-project/vibe-record" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/icons" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="D:\react-project\freak\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\react-project\freak\src\icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\react-project\freak\src\views\record\category" />
       <recent name="D:\react-project\freak\src\views\record\note" />
@@ -55,7 +61,7 @@
       <workItem from="1610515739412" duration="1563000" />
       <workItem from="1610517329068" duration="14218000" />
       <workItem from="1610589148151" duration="17545000" />
-      <workItem from="1610679985365" duration="2107000" />
+      <workItem from="1610679985365" duration="4027000" />
     </task>
     <servers />
   </component>
@@ -99,9 +105,9 @@
       <screen x="0" y="0" width="1463" height="914" />
     </state>
     <state x="474" y="81" key="refactoring.ChangeSignatureDialog/0.0.1463.914@0.0.1463.914" timestamp="1610525427148" />
-    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1610680567015">
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup" timestamp="1610682817248">
       <screen x="0" y="0" width="1463" height="914" />
     </state>
-    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1463.914@0.0.1463.914" timestamp="1610680567015" />
+    <state x="394" y="194" width="672" height="678" key="search.everywhere.popup/0.0.1463.914@0.0.1463.914" timestamp="1610682817248" />
   </component>
 </project>
