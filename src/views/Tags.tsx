@@ -3,6 +3,7 @@ import React from "react";
 import {useTags} from "../useTags";
 import styled from "styled-components";
 import Icon from "../components/Icon";
+import {Link} from "react-router-dom";
 
 const TagsCSS = styled.ol`
   font-size: 16px;
@@ -12,12 +13,13 @@ const TagsCSS = styled.ol`
   > li{
       border-bottom: 1px solid #769fcd;
       line-height: 20px;
-      padding: 12px 16px 0 0;
       margin: 0 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; 
-     
+      > a{
+          padding: 8px 16px 8px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;   
+      }
   }
 `;
 const Button = styled.button`
@@ -37,16 +39,23 @@ const Center = styled.div`
 `;
 const Space = styled.div`
   height: 40px;
-`
+`;
 
 function Tags() {
     const {tags, setTags} = useTags(); // useTags
     return (
         <Layout>
             <TagsCSS>
-                {tags.map(tag =>
 
-                    <li key={tag}><span className="oneLine">{tag}</span><Icon name="right"></Icon></li>)}
+                {tags.map(tag =>
+                    <li key={tag}>
+                        <Link to={"tags/" + tag}>
+                            <span className="oneLine">
+                                {tag}
+                            </span>
+                            <Icon name="right" />
+                        </Link>
+                    </li>)}
             </TagsCSS>
             <Center>
                 <Space></Space>

@@ -7,10 +7,13 @@ import {CategorySection} from "./record/category/CategorySection";
 import NumberPadSection from "./record/numberpad/NumberPadSection";
 
 
-const MyLayout = styled(Layout)`
+const MyLayout = styled.div`
   display: flex;
   flex-direction: column;
+  overflow: auto;
+  min-height: 100vh;
 `;
+
 
 function Record() {
     const [selected, setSelected] = useState({

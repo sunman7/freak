@@ -2,20 +2,18 @@
 import styled from "styled-components";
 
 const CategoryCSS = styled.section`
-
+  position: relative;
   >ul{
     display: flex;
     font-size: 24px;
-    
-    
+    justify-content: center;
+    position:relative;
     background: #d6e6f2;
     >li{ 
       text-align: center;
-      width: 50%;
+      width: 25%;
       padding: 16px 0;
       &.selected{
-          color: #f7fbfc;
-          background: #769fcd;
           position: relative;
           &::after{
               content: '';
@@ -26,6 +24,7 @@ const CategoryCSS = styled.section`
               width: 100%;
               bottom: 0;
               left: 0;
+              margin-bottom: 5px;
           }
       }
     }

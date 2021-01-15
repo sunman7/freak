@@ -14,17 +14,20 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Route exact path="/tags">
+                <Route path="/tags" exact>
                     <Tags/>
                 </Route>
-                <Route exact path="/record">
+                <Route exact path="/tags/:tag">
+
+                </Route>
+                <Route path="/record">
                     <Record/>
                 </Route>
-                <Route exact path="/statistics">
+                <Route path="/statistics">
                     <Statistics/>
                 </Route>
-                <Redirect exact from="/" to="/record"/>
-                <Route exact path="*">
+                <Redirect from="/" to="/record"/>
+                <Route path="*">
                     <NoMatch/>
                 </Route>
             </Switch>
